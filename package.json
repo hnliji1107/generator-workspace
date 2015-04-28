@@ -1,0 +1,18 @@
+{
+  "name": "generator-workspace",
+  "version": "0.0.1",
+  "description": "yeoman generator构建本地项目脚手架",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hnliji1107/generator-workspace.git"
+  },
+  "keywords": [
+    "generator",
+    "workspace"
+  ],
+  "author": "shijun.lisj",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^0.18.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "<%= name %>",
+    "version": "0.0.1",
+    "description": "<%= description %>",
+    "main": "index.js",
+    "author": "<%= author %>",
+    "email": "<%= email %>",
+    "repository": {
+        "type": "git",
+        "url": "<%= repo %>"
+    },
+    "keywords": ["yeoman-generator"],
+    "license": "<%= license %>",
+    "readmeFilename": "README.md",
+    "dependencies": {}
+}
