@@ -1,6 +1,6 @@
 <%= name %>
 ========================
-@author: <%= author %>
-@email: <%= email %>
-Source URL: <%= repo %>
+@author: <%= author %> 
+@email: <%= email %> 
+Source URL: <%= repo %> 
 <%= description %>
