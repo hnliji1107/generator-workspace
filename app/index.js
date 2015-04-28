@@ -1,6 +1,6 @@
 /** 
  * @author 928990115@qq.com
- * @description yeoman搭建基本项目脚手架
+ * @description yeoman generator 搭建基本项目脚手架
  * @date 2015-01-29
  * @update 2015-04-28
  */
@@ -20,13 +20,6 @@ module.exports = yeoman.generators.Base.extend({
         } catch (e) {
             this.pkg = {};
         }
-
-        this.name = this.pkg.name.replace(/^generator-/, '');
-        this.plugins = this.pkg.neatDependencies || [];
-        this.license = this.pkg.license || 'BSD-2-Clause';
-        this.repo = (this.pkg.repository && this.pkg.repository.url) || '';
-        this.description = this.pkg.description || '';
-        this.author = this.pkg.author || '';
     },
 
     prompting: function() {
@@ -36,32 +29,32 @@ module.exports = yeoman.generators.Base.extend({
             type: 'input',
             name: 'name',
             message: 'Project Name:',
-            default: this.name
+            default: 'yeoman-workspace'
         }, {
             type: 'input',
             name: 'description',
             message: 'Project Description:',
-            default: this.description
+            default: 'yeoman generator workspace'
         }, {
             type: 'input',
             name: 'repo',
             message: 'Git Repository:',
-            default: this.repo
+            default: 'git@github.com:hnliji1107/generator-workspace.git'
         }, {
             type: 'input',
             name: 'license',
             message: 'License:',
-            default: this.license
+            default: 'MIT'
         }, {
             type: 'input',
             name: 'author',
             message: 'Author:',
-            default: this.author
+            default: 'hnliji1107'
         }, {
             type: 'input',
             name: 'email',
-            message: 'Author Email:',
-            default: this.author
+            message: 'Email:',
+            default: '928990115@qq.com'
         }];
 
         this.prompt(prompts, function(answers) {
